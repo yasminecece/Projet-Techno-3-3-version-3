@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>StudySpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="StudySpace logo" class="logo">
+  <h1>StudySpace</h1>
+  <p class="subtitle">Ton espace pour t’organiser et réussir 📚</p>
+</header>
+
+<main class="dashboard">
+
+  <!-- TO DO LIST -->
+  <section class="card">
+    <h2>✅ Tâches</h2>
+    <ul class="todo-list">
+      <li><input type="checkbox"> Réviser le contrôle de maths</li>
+      <li><input type="checkbox"> Faire l’exercice d’anglais</li>
+      <li><input type="checkbox"> Relire la leçon d’histoire</li>
+    </ul>
+  </section>
+
+  <!-- CALENDRIER -->
+  <section class="card">
+    <h2>📅 Calendrier</h2>
+    <input type="date">
+    <input type="text" placeholder="Ajouter un événement">
+    <button>Ajouter</button>
+  </section>
+
+  <!-- CHATBOT -->
+  <section class="card chatbot">
+    <h2>🤖 Assistant StudySpace</h2>
+    <div class="chatbox" id="chatbox">
+      <p class="bot">Salut 👋 Besoin d’un conseil pour t’organiser ?</p>
+    </div>
+    <input type="text" id="userInput" placeholder="Écris ton message...">
+    <button onclick="sendMessage()">Envoyer</button>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
