@@ -3,43 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>StudySpace</title>
+
+  <!-- Police Jennifer Lynne -->
+  <link href="https://fonts.cdnfonts.com/css/jennifer-lynne" rel="stylesheet">
+
+  <!-- FullCalendar -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <img src="logo.png" alt="StudySpace logo" class="logo">
-  <h1>StudySpace</h1>
-  <p class="subtitle">Ton espace pour t’organiser et réussir 📚</p>
+  <div class="logo">📘</div>
+  <h1 class="title">StudySpace</h1>
+  <div class="user">👤 Yasmine CHENCHAH</div>
 </header>
 
-<main class="dashboard">
+<main>
 
-  <!-- TO DO LIST -->
   <section class="card">
-    <h2>✅ Tâches</h2>
-    <ul class="todo-list">
+    <h2>📝 ToDoList</h2>
+    <ul>
       <li><input type="checkbox"> Réviser le contrôle de maths</li>
-      <li><input type="checkbox"> Faire l’exercice d’anglais</li>
-      <li><input type="checkbox"> Relire la leçon d’histoire</li>
+      <li><input type="checkbox"> Faire l'exercice d'anglais</li>
+      <li><input type="checkbox"> Relire la leçon d'histoire</li>
     </ul>
   </section>
 
-  <!-- CALENDRIER -->
-  <section class="card">
-    <h2>📅 Calendrier</h2>
-    <input type="date">
-    <input type="text" placeholder="Ajouter un événement">
-    <button>Ajouter</button>
+  <section class="card planner">
+    <h2>📅 Planner</h2>
+    <div id="calendar"></div>
   </section>
 
-  <!-- CHATBOT -->
-  <section class="card chatbot">
+  <section class="card assistant">
     <h2>🤖 Assistant StudySpace</h2>
-    <div class="chatbox" id="chatbox">
-      <p class="bot">Salut 👋 Besoin d’un conseil pour t’organiser ?</p>
+    <div id="chat">
+      <p><strong>Assistant :</strong> Dis-moi ce que tu dois faire et je t’aide à t’organiser 💡</p>
     </div>
-    <input type="text" id="userInput" placeholder="Écris ton message...">
+    <input id="userInput" placeholder="Écris ton message...">
     <button onclick="sendMessage()">Envoyer</button>
   </section>
 
@@ -48,3 +52,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
