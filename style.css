@@ -1,53 +1,68 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background: #f5f7fb;
-  margin: 0;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;
+.home-header {
+  text-align: center;
+  padding: 30px;
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+  margin: auto;
   background: white;
-  border-radius: 15px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  font-size: 32px;
 }
 
 .title {
   font-family: 'Jennifer Lynne', cursive;
-  font-size: 48px;
+  font-size: 52px;
+  margin: 10px 0;
 }
 
 .user {
   font-weight: bold;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 20px;
-  padding: 20px;
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
 }
 
-.card {
+.menu-card {
+  padding: 30px 40px;
   background: white;
   border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-#chat {
-  height: 150px;
-  overflow-y: auto;
-  margin-bottom: 10px;
+.page-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+#calendar {
+  padding: 20px;
+}
+
+.todo, .assistant {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
