@@ -2,45 +2,10 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>TEST PLANNER</title>
-
-  <!-- FullCalendar CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    #calendar {
-      height: 100vh;
-      padding: 20px;
-    }
-  </style>
+  <title>Planner Test</title>
 </head>
-
 <body>
-
-<h1 style="text-align:center;">TEST PLANNER</h1>
-<div id="calendar"></div>
-
-<!-- FullCalendar JS -->
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const calendarEl = document.getElementById("calendar");
-
-    const calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: "dayGridMonth",
-      dateClick: function(info) {
-        alert("Jour cliqué : " + info.dateStr);
-      }
-    });
-
-    calendar.render();
-  });
-</script>
-
+  <h1>PLANNER OK ✅</h1>
+  <p>Si tu vois ça, GitHub Pages fonctionne.</p>
 </body>
 </html>
